@@ -41,6 +41,9 @@ img{
 .grey{
 	color:#AAA;
 }
+.footer{
+	padding-bottom: 10px;
+}
 a{
 	text-decoration: none;
 	color: orange;
