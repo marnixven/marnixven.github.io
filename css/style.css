@@ -94,6 +94,30 @@ hr.titlehr{
 	display:block;
 	margin:0 auto;
 }
+
+/* Footer */
+  .column {
+	float: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+  }
+  /* Clear floats after columns */
+  .row:after {
+	display: table;
+	clear: both;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  }
+@media screen and (min-width: 600px) {
+	.column {
+	  width: 33.33%;
+	  background-color: blue;
+	}
+  }
+
+  /* Photogrid */
 #grid {
     line-height: 0;
     -webkit-column-count: 1;
@@ -108,7 +132,7 @@ hr.titlehr{
     height: auto;
     margin-bottom: 10px;
 }
-  #grid img:hover {
+#grid img:hover {
 	opacity: 0.6;
 	filter: overlay(opacity=30);
 	transition: 0.5s;
